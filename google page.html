@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raghu | Personal Portfolio</title>
+
+<meta name="description" content="Raghu Official Personal Website from Prayagraj Uttar Pradesh">
+<meta name="keywords" content="Raghu, Raghuraj, Prayagraj, Portfolio">
+<meta name="author" content="Raghu">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#002244;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#004080;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+    text-align:center;
+}
+
+.profile-img{
+    width:180px;
+    border-radius:50%;
+    border:5px solid #004080;
+}
+
+.card{
+    background:white;
+    width:70%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+input, textarea{
+    width:80%;
+    padding:10px;
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+footer{
+    background:#002244;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Raghuraj Kotarya</h1>
+<p>Welcome To My Personal Portfolio</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#admin">Admin Login</a>
+</nav>
+
+<section id="about">
+<div class="card">
+
+<!-- ✅ आपकी फोटो यहाँ लगी है -->
+<img src="raghu.jpg" class="profile-img">
+
+<h2>About Me</h2>
+<p><b>नाम:</b> Raghuraj Kotarya</p>
+<p><b>जिला:</b> Prayagraj, Uttar Pradesh</p>
+<p><b>Instagram:</b> mr_raghu1846</p>
+<p>मैं एक वेब डिज़ाइन सीखने वाला छात्र हूँ।</p>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="card">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="आपका नाम" required><br>
+<input type="email" placeholder="आपका Email" required><br>
+<textarea placeholder="आपका संदेश" rows="5"></textarea><br>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+</section>
+
+<section id="admin">
+<div class="card">
+<h2>Admin Login</h2>
+
+<form onsubmit="return login()">
+<input type="text" id="username" placeholder="Username"><br>
+<input type="password" id="password" placeholder="Password"><br>
+<button type="submit">Login</button>
+</form>
+
+<p id="loginMsg"></p>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Raghuraj Kotarya | All Rights Reserved</p>
+</footer>
+
+<script>
+function login(){
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if(user=="Rinav200" && pass=="Raghu@1819"){
+        document.getElementById("loginMsg").innerHTML="Login Successful ✅";
+        document.getElementById("loginMsg").style.color="green";
+    } else {
+        document.getElementById("loginMsg").innerHTML="Wrong Username or Password ❌";
+        document.getElementById("loginMsg").style.color="red";
+    }
+    return false;
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarkari Kaam Portal | Raghu</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f2f2f2;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+h2{
+    background:#004080;
+    color:white;
+    padding:10px;
+}
+
+.section{
+    padding:20px;
+}
+
+a{
+    display:block;
+    background:white;
+    margin:8px;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+    border-radius:5px;
+    box-shadow:0 0 5px gray;
+}
+
+a:hover{
+    background:#d9edf7;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sarkari Kaam Portal</h1>
+<p>All Government Services Links</p>
+</header>
+
+<div class="section">
+
+<h2>सरकारी योजनाएं</h2>
+
+<a href="#">पीएम विद्यालक्ष्मी लोन (10 लाख)</a>
+<a href="#">विधवा महिला सहायता 30000</a>
+<a href="#">पक्का मकान 2.5 लाख</a>
+<a href="#">लेबर पंजीयन 7000</a>
+<a href="#">कन्या उत्थान योजना 25000</a>
+<a href="#">LIC बिमा सखी</a>
+<a href="#">बेटी की शादी 1 लाख</a>
+<a href="#">बुजुर्ग पेंशन 1000</a>
+<a href="#">पीएम उज्ज्वला नई कनेक्शन</a>
+<a href="#">बेरोजगारी भत्ता 1500</a>
+<a href="#">अन्तर्जातीय विवाह 2.5 लाख</a>
+
+<h2>बिजली बिल सेवा</h2>
+
+<a href="#">चेक बिजली बिल</a>
+<a href="#">बिजली बिल राहत योजना 2025</a>
+<a href="#">बिजली बिल राहत कैलकुलेटर</a>
+
+<h2>वोटर लिस्ट और चुनाव</h2>
+
+<a href="#">नयी वोटर लिस्ट</a>
+<a href="#">UP पंचायत चुनाव वोटर लिस्ट</a>
+<a href="#">कटे नाम की लिस्ट</a>
+<a href="#">BLO स्टेटस चेक</a>
+
+<h2>जमीन और भूलेख</h2>
+
+<a href="#">भू नक्शा</a>
+<a href="#">भूलेख</a>
+<a href="#">जमीन विवाद चेक</a>
+
+<h2>आधार / पैन / बैंक</h2>
+
+<a href="#">आधार कार्ड</a>
+<a href="#">पैन कार्ड</a>
+<a href="#">NPCI आधार लिंक</a>
+<a href="#">बैंक बैलेंस चेक</a>
+
+<h2>किसान और सब्सिडी</h2>
+
+<a href="#">फॉर्मर रजिस्ट्री</a>
+<a href="#">पीएम किसान</a>
+<a href="#">ट्रैक्टर सब्सिडी</a>
+<a href="#">खेत तारबंदी सब्सिडी</a>
+
+<h2>गाड़ी और लाइसेंस</h2>
+
+<a href="#">ड्राइविंग लाइसेंस</a>
+<a href="#">लर्निंग लाइसेंस</a>
+<a href="#">चालान चेक</a>
+<a href="#">RC प्रिंट</a>
+<a href="#">Know Your Vehicle Status</a>
+
+</div>
+
+<footer>
+<p>© 2026 Sarkari Kaam Portal | Created by Raghu</p>
+</footer>
+
+</body>
+</html>
